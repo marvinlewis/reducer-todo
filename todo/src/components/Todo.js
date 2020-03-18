@@ -14,7 +14,7 @@ const Todo = ({ todo, dispatch }) => {
         <div 
         onClick={handleComplete}
         >
-             <p className="box">{item}</p>
+             <p>{item}</p>
         </div>
     )
 }

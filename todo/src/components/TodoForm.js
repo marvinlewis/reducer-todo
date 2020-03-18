@@ -1,4 +1,5 @@
 import React, { useState, useReducer } from "react";
+import "./todo.css"
 
 
 const TodoForm = ({dispatch}) => {
@@ -31,8 +32,10 @@ const TodoForm = ({dispatch}) => {
 
      return(
          <>
-        <form onSubmit={handleSubmit}>
-            <button>Add Task</button>
+        <form
+        className="form" 
+        onSubmit={handleSubmit}>
+            <button>Add</button>
             <input
             type="text"
             name="input"
